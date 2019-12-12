@@ -34,6 +34,7 @@ class Reactor implements Runnable
         SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
         selectionKey.attach(new Acceptor(selector, serverSocketChannel));
     }
+    // 这个run()才是多线程的run()
     @Override
     public void run()
     {
@@ -74,6 +75,7 @@ class Acceptor implements Runnable
         this.selector = selector;
         this.serverSocketChannel = serverSocketChannel;
     }
+    // 这里的run()就是一个普通方法,不是多线程那个!!!
     @Override
     public void run()
     {
@@ -109,6 +111,7 @@ class Handler implements Runnable
         assert selector != null;
         selector.wakeup();
     }
+    // 这里的run()就是一个普通方法,不是多线程那个!!!
     @Override
     public void run()
     {
