@@ -5,98 +5,142 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
-import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
  * @author joker
- * @time 2019/12/11 下午6:02
+ * @time 2019/12/12 下午7:38
  */
 public class SingleThread
 {
     public static void main(String[] args) throws IOException
     {
-        Selector selector = Selector.open();
-        ServerSocketChannel serverChannel = ServerSocketChannel.open();
-        serverChannel.configureBlocking(false);
-        serverChannel.bind(new InetSocketAddress(8189));
-        serverChannel.register(selector, SelectionKey.OP_ACCEPT);
+        Reactor reactor = new Reactor();
         ExecutorService executorService = Executors.newCachedThreadPool();
-        while (true) {
-            selector.select();
-            Set<SelectionKey> keys = selector.selectedKeys();
-            Iterator<SelectionKey> iterator = keys.iterator();
-            while (iterator.hasNext()) {
-                SelectionKey selectionKey = (SelectionKey) iterator.next();
-                if (selectionKey.isAcceptable()) {
-                    executorService.submit(new Handler<>(selectionKey.selector()));
+        executorService.submit(reactor);
+    }
+}
+class Reactor implements Runnable
+{
+    private static final int PORT = 8189;
+    final Selector selector;
+    final ServerSocketChannel serverSocketChannel;
+    Reactor() throws IOException
+    {
+        this.selector = Selector.open();
+        serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(PORT));
+        serverSocketChannel.configureBlocking(false);
+        SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+        selectionKey.attach(new Acceptor(selector, serverSocketChannel));
+    }
+    @Override
+    public void run()
+    {
+        try {
+            while (true) {
+                selector.select();
+                Set<SelectionKey> interestKeys = selector.selectedKeys();
+                for (SelectionKey selectionKey : interestKeys) {
+                    dispatcher(selectionKey);
                 }
+                interestKeys.clear();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    void dispatcher(SelectionKey selectionKey)
+    {
+        Thread thread = new Thread((Runnable) selectionKey.attachment());
+        thread.start();
+    }
+}
+class Acceptor implements Runnable
+{
+    private ServerSocketChannel serverSocketChannel;
+    private Selector selector;
+    Acceptor(Selector selector, ServerSocketChannel serverSocketChannel)
+    {
+        this.selector = selector;
+        this.serverSocketChannel = serverSocketChannel;
+    }
+    @Override
+    public void run()
+    {
+        try {
+            SocketChannel socketChannel = serverSocketChannel.accept();
+            if (socketChannel != null) {
+                new Handler(selector, socketChannel);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
-class Handler<T> implements Callable<T>
+class Handler implements Runnable
 {
-    private T data;
-    private Selector selector;
-    public Handler(Selector selector)
+    private static final int BYTE_SIZE = 1024;
+    private SocketChannel socketChannel;
+    private SelectionKey selectionKey;
+    private String msg;
+    private static final int READ = 1, WRITE = 2;
+    private int statue = READ;
+    Handler(Selector selector, SocketChannel socketChannel) throws IOException
     {
-        this.selector = selector;
+        if (socketChannel == null) {
+            System.out.println("socketChannel is null");
+        }
+        assert socketChannel != null;
+        this.socketChannel = socketChannel;
+        socketChannel.configureBlocking(false);
+        this.selectionKey = socketChannel.register(selector, 0);
+        this.selectionKey.attach(this);
+        this.selectionKey.interestOps(SelectionKey.OP_READ);
+        assert selector != null;
+        selector.wakeup();
     }
     @Override
-    public T call() throws Exception
+    public void run()
     {
-        int cnt = 0;
-        while (cnt < 5) {
-            selector.select();
-            Set<SelectionKey> keys = selector.selectedKeys();
-            Iterator<SelectionKey> iterator = keys.iterator();
-            while (iterator.hasNext()) {
-                SelectionKey selectionKey = iterator.next();
-                iterator.remove();
-                if (selectionKey.isReadable()) {
-                    doRead(selectionKey);
-                }
-                if (selectionKey.isWritable()) {
-                    doWrite(selectionKey);
-                }
+        try {
+            if (this.statue == READ) {
+                doRead();
             }
-            ++cnt;
+            if (this.statue == WRITE)
+            {
+                doWrite();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        String msg = "Done!";
-        data = (T) msg;
-        return data;
     }
-    public void doRead(SelectionKey selectionKey) throws IOException
+    public void doRead() throws IOException
     {
-        SocketChannel channel = (SocketChannel) selectionKey.channel();
-        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-        long readLength = channel.read(byteBuffer);
-        String msg = null;
+        ByteBuffer byteBuffer = ByteBuffer.allocate(BYTE_SIZE);
+        long readLength = socketChannel.read(byteBuffer);
         while (readLength > 0) {
             byteBuffer.flip();
             byte[] data = byteBuffer.array();
-            msg = new String(data).trim();
-            System.out.println("Client says: "+msg);
+            msg = new String(data);
             byteBuffer.clear();
-            readLength = channel.read(byteBuffer);
+            readLength = socketChannel.read(byteBuffer);
         }
-        channel.configureBlocking(false);
-        channel.register(selectionKey.selector(), SelectionKey.OP_WRITE);
+        System.out.println("Client says: "+msg);
+        this.selectionKey.interestOps(SelectionKey.OP_WRITE);
+        this.statue = WRITE;
     }
-    public void doWrite(SelectionKey selectionKey) throws IOException
+    public void doWrite() throws IOException
     {
-        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-        SocketChannel channel = (SocketChannel) selectionKey.channel();
-        String msg = "qwer";
+        ByteBuffer byteBuffer = ByteBuffer.allocate(BYTE_SIZE);
         byteBuffer.put(msg.getBytes());
         byteBuffer.flip();
-        channel.write(byteBuffer);
+        socketChannel.write(byteBuffer);
         byteBuffer.compact();
-        channel.configureBlocking(false);
-        channel.register(selectionKey.selector(), SelectionKey.OP_READ);
+        selectionKey.interestOps(SelectionKey.OP_READ);
+        this.statue = READ;
+
     }
 }
