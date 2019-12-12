@@ -5,10 +5,8 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 /**
  * @author joker
  * @time 2019/12/12 下午7:38
@@ -18,8 +16,8 @@ public class SingleThread
     public static void main(String[] args) throws IOException
     {
         Reactor reactor = new Reactor();
-        ExecutorService executorService = Executors.newCachedThreadPool();
-        executorService.submit(reactor);
+        Runnable runnable = reactor;
+        runnable.run();
     }
 }
 class Reactor implements Runnable
@@ -27,7 +25,7 @@ class Reactor implements Runnable
     private static final int PORT = 8189;
     final Selector selector;
     final ServerSocketChannel serverSocketChannel;
-    Reactor() throws IOException
+    public Reactor() throws IOException
     {
         this.selector = Selector.open();
         serverSocketChannel = ServerSocketChannel.open();
@@ -40,13 +38,19 @@ class Reactor implements Runnable
     public void run()
     {
         try {
+            int cnt = 0;
             while (true) {
+                System.out.println("第"+cnt+"次轮徇");
                 selector.select();
-                Set<SelectionKey> interestKeys = selector.selectedKeys();
-                for (SelectionKey selectionKey : interestKeys) {
-                    dispatcher(selectionKey);
+                Set<SelectionKey> keys = selector.selectedKeys();
+                Iterator<SelectionKey> iterator = keys.iterator();
+                iterator = keys.iterator();
+                while (iterator.hasNext()) {
+                    SelectionKey key = iterator.next();
+                    iterator.remove();
+                    dispatcher(key);
                 }
-                interestKeys.clear();
+                ++cnt;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -54,8 +58,11 @@ class Reactor implements Runnable
     }
     void dispatcher(SelectionKey selectionKey)
     {
-        Thread thread = new Thread((Runnable) selectionKey.attachment());
-        thread.start();
+        System.out.println("dis");
+        Runnable runnable = (Runnable) selectionKey.attachment();
+        if (runnable != null) {
+            runnable.run();
+        }
     }
 }
 class Acceptor implements Runnable
@@ -105,6 +112,7 @@ class Handler implements Runnable
     @Override
     public void run()
     {
+        System.out.println(Thread.currentThread().getName()+": is working");
         try {
             if (this.statue == READ) {
                 doRead();
