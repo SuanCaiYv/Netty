@@ -4,7 +4,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
 
-public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf>
+public class  EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf>
 {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg)

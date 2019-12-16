@@ -25,6 +25,11 @@ class Reactor implements Runnable
     private static final int PORT = 8189;
     final Selector selector;
     final ServerSocketChannel serverSocketChannel;
+
+    /**
+     * 进行相应的启动配置
+     * @throws IOException
+     */
     public Reactor() throws IOException
     {
         this.selector = Selector.open();
@@ -43,13 +48,13 @@ class Reactor implements Runnable
             while (true) {
                 System.out.println("第"+cnt+"次轮徇");
                 selector.select();
-                Set<SelectionKey> keys = selector.selectedKeys();
-                Iterator<SelectionKey> iterator = keys.iterator();
-                iterator = keys.iterator();
+                Set<SelectionKey> interestKeys = selector.selectedKeys();
+                Iterator<SelectionKey> iterator = interestKeys.iterator();
+                iterator = interestKeys.iterator();
                 while (iterator.hasNext()) {
                     SelectionKey key = iterator.next();
-                    iterator.remove();
                     dispatcher(key);
+                    iterator.remove();
                 }
                 ++cnt;
             }
@@ -59,7 +64,6 @@ class Reactor implements Runnable
     }
     void dispatcher(SelectionKey selectionKey)
     {
-        System.out.println("dis");
         Runnable runnable = (Runnable) selectionKey.attachment();
         if (runnable != null) {
             runnable.run();
