@@ -23,10 +23,10 @@ public class ClientFirstInHandler extends ChannelInboundHandlerAdapter
     @Override
     public void channelActive(ChannelHandlerContext ctx)
     {
+        System.out.println(ID+"连接处于活动状态");
         String msg = "我是客户端文本";
         ByteBuf out = Unpooled.copiedBuffer(msg.getBytes());
         ctx.writeAndFlush(out);
-        System.out.println(ID+"连接处于活动状态");
     }
 
     @Override
