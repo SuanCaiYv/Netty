@@ -2,7 +2,6 @@ package handler.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
@@ -39,16 +38,8 @@ public class ServerFirstInHandler extends ChannelInboundHandlerAdapter
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx)
     {
-        System.out.println(ID+"读取完成, 准备写入");
-        ctx.write(Unpooled.EMPTY_BUFFER).addListener((ChannelFutureListener) future -> {
-            if (future.isSuccess()) {
-                System.out.println("写入成功");
-            }
-            else {
-                System.out.println("写入失败");
-            }
-        });
-        ctx.writeAndFlush(Unpooled.copiedBuffer("服务端写入完成", CharsetUtil.UTF_8));
+        // 转发到下一个InboundHandler处理
+        ctx.fireChannelReadComplete();
     }
 
     @Override

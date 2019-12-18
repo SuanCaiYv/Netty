@@ -2,6 +2,7 @@ package server;
 
 import handler.server.ServerFirstInHandler;
 import handler.server.ServerFirstOutHandler;
+import handler.server.ServerSecondInHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -38,6 +39,7 @@ public class Server
                     {
                         ch.pipeline().addLast(new ServerFirstOutHandler());
                         ch.pipeline().addLast(new ServerFirstInHandler());
+                        ch.pipeline().addLast(new ServerSecondInHandler());
                         /*
                         在InboundHandler执行完成需要调用OutboundHandler的时候,
                         比如在InboundHandler调用ctx.writeAndFlush()方法,
