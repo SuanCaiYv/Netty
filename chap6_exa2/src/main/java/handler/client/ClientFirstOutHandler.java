@@ -25,6 +25,7 @@ public class ClientFirstOutHandler extends ChannelOutboundHandlerAdapter
     public void connect(ChannelHandlerContext ctx, SocketAddress remoteAddress, SocketAddress localAddress, ChannelPromise promise) throws Exception
     {
         System.out.println(ID+"连接到远程服务器");
+        ctx.connect(remoteAddress, localAddress, promise);
     }
 
     @Override

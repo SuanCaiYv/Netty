@@ -23,6 +23,9 @@ public class ClientFirstInHandler extends ChannelInboundHandlerAdapter
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception
     {
+        String msg = "客户端已连接到服务器";
+        ByteBuf out = Unpooled.copiedBuffer(msg.getBytes());
+        ctx.writeAndFlush(out);
         System.out.println(ID+"连接处于活动状态");
     }
 
@@ -31,7 +34,7 @@ public class ClientFirstInHandler extends ChannelInboundHandlerAdapter
     {
         System.out.println(ID+"开始读...");
         ByteBuf in = (ByteBuf) msg;
-        System.out.println(ID+"读到了: "+in.toString(CharsetUtil.UTF_8));
+        System.out.println(ID+"读到了服务器说的: "+in.toString(CharsetUtil.UTF_8));
     }
 
     @Override

@@ -32,8 +32,7 @@ public class ServerFirstInHandler extends ChannelInboundHandlerAdapter
     {
         System.out.println(ID+"开始读...");
         ByteBuf in = (ByteBuf) msg;
-        System.out.println(ID+"读到了: "+in.toString(CharsetUtil.UTF_8));
-        //in.retain();
+        System.out.println(ID+"读到了客户端说的: "+in.toString(CharsetUtil.UTF_8));
         ctx.write(in);
     }
 

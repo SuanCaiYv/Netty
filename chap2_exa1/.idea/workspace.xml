@@ -2,75 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e13acac2-2a26-468d-ad7e-6ce383a1d310" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap5_exa1/chap5_exa1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/chap6_exa1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/FirstClientInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/FirstClientOutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/FirstInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/FirstOutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/FirstServerInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/SecondClientInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/SecondClientOutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/SecondInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/SecondOutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/handler/SecondServerInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/src/main/java/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/client/Client$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/FirstClientInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/FirstInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/FirstOutHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/FirstServerInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/SecondClientInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/SecondInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/SecondOutHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/handler/SecondServerInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa1/target/classes/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/chap6_exa2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/handler/client/ClientFirstInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/handler/client/ClientFirstOutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/handler/server/ServerFirstInHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/client/Client$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/handler/client/ClientFirstInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/handler/server/ServerFirstInHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap6_exa2/target/classes/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap0_exa1/src/MainSubstrThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap0_exa1/src/MainSubstrThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap0_exa1/src/MultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap0_exa1/src/MultiThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap0_exa1/src/SingleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap0_exa1/src/SingleThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EchoClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EchoClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EchoServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EchoServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap4_exa1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap4_exa1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chap4_exa1/target/classes/NIOServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap6_exa2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap6_exa2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap6_exa2/src/main/java/handler/client/ClientFirstOutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap6_exa2/src/main/java/handler/client/ClientFirstOutHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +127,8 @@
       <workItem from="1576481480079" duration="9000" />
       <workItem from="1576492862400" duration="2497000" />
       <workItem from="1576500485717" duration="2318000" />
+      <workItem from="1576566639679" duration="25000" />
+      <workItem from="1576566684159" duration="2000" />
     </task>
     <servers />
   </component>

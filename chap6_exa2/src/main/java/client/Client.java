@@ -40,6 +40,8 @@ public class Client
                     }
                 });
         ChannelFuture channelFuture = bootstrap.connect().sync();
+        SocketChannel socketChannel = (SocketChannel) channelFuture.channel();
+        socketChannel.writeAndFlush("第一条信息");
         channelFuture.channel().closeFuture().sync();
     }
 }
