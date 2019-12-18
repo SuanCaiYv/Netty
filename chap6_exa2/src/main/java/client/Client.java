@@ -35,13 +35,12 @@ public class Client
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception
                     {
-                        ch.pipeline().addLast(new ClientFirstInHandler());
                         ch.pipeline().addLast(new ClientFirstOutHandler());
+                        ch.pipeline().addLast(new ClientFirstInHandler());
                     }
                 });
         ChannelFuture channelFuture = bootstrap.connect().sync();
-        SocketChannel socketChannel = (SocketChannel) channelFuture.channel();
-        socketChannel.writeAndFlush("第一条信息");
         channelFuture.channel().closeFuture().sync();
+        group.shutdownGracefully().sync();
     }
 }

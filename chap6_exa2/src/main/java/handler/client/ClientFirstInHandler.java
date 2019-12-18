@@ -15,51 +15,53 @@ public class ClientFirstInHandler extends ChannelInboundHandlerAdapter
     private static final String ID = "ClientFirstInHandler: ";
 
     @Override
-    public void channelRegistered(ChannelHandlerContext ctx) throws Exception
+    public void channelRegistered(ChannelHandlerContext ctx)
     {
         System.out.println(ID+"连接被注册");
     }
 
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception
+    public void channelActive(ChannelHandlerContext ctx)
     {
-        String msg = "客户端已连接到服务器";
+        String msg = "我是客户端文本";
         ByteBuf out = Unpooled.copiedBuffer(msg.getBytes());
         ctx.writeAndFlush(out);
         System.out.println(ID+"连接处于活动状态");
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
+    public void channelRead(ChannelHandlerContext ctx, Object msg)
     {
         System.out.println(ID+"开始读...");
         ByteBuf in = (ByteBuf) msg;
         System.out.println(ID+"读到了服务器说的: "+in.toString(CharsetUtil.UTF_8));
+        //ctx.write(Unpooled.copiedBuffer(in));
     }
 
     @Override
-    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception
+    public void channelReadComplete(ChannelHandlerContext ctx)
     {
         System.out.println(ID+"读取完成");
-        ctx.flush();
+        //ctx.writeAndFlush(Unpooled.copiedBuffer("客户端读取完成", CharsetUtil.UTF_8));
     }
 
     @Override
-    public void channelInactive(ChannelHandlerContext ctx) throws Exception
+    public void channelInactive(ChannelHandlerContext ctx)
     {
         System.out.println(ID+"连接处于非活动状态");
         ctx.flush();
     }
 
     @Override
-    public void channelUnregistered(ChannelHandlerContext ctx) throws Exception
+    public void channelUnregistered(ChannelHandlerContext ctx)
     {
         System.out.println(ID+"连接取消注册");
     }
 
     @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
     {
         System.out.println(cause.getMessage());
     }
+
 }

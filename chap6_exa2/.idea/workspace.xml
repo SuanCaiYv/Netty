@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1525dc-f312-4561-a59d-820303797496" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../chap2_exa1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2_exa1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/client/ClientFirstInHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/client/ClientFirstInHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/client/ClientFirstOutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/client/ClientFirstOutHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstInHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstInHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstOutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstOutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/client/ClientFirstInHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/client/ClientFirstInHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/server/ServerFirstInHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/server/ServerFirstInHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="chap6_exa2" />
@@ -108,7 +112,7 @@
       <updated>1576500014743</updated>
       <workItem from="1576500015823" duration="4744000" />
       <workItem from="1576566639970" duration="15000" />
-      <workItem from="1576652805451" duration="925000" />
+      <workItem from="1576652805451" duration="10561000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1576504366939</created>
@@ -117,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576504366939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3">
+      <created>1576653891807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576653891807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,44 +136,61 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1088" y="445" width="381" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1576653831126">
+    <state x="1088" y="445" width="381" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1576666502532">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1088" y="445" width="381" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653831126" />
+    <state x="1088" y="445" width="381" height="573" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576666502532" />
     <state x="858" y="392" width="833" height="679" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1576500029786">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="858" y="392" width="833" height="679" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576500029786" />
-    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2" timestamp="1576504366825">
+    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2" timestamp="1576653891712">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576504366825" />
-    <state width="2512" height="397" key="GridCell.Tab.0.bottom" timestamp="1576653745808">
+    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653891712" />
+    <state width="2512" height="393" key="GridCell.Tab.0.bottom" timestamp="1576672528957">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2512" height="397" key="GridCell.Tab.0.bottom/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653745808" />
-    <state width="2512" height="397" key="GridCell.Tab.0.center" timestamp="1576653745808">
+    <state width="2512" height="393" key="GridCell.Tab.0.bottom/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576672528957" />
+    <state width="2512" height="393" key="GridCell.Tab.0.center" timestamp="1576672528957">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2512" height="397" key="GridCell.Tab.0.center/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653745808" />
-    <state width="2512" height="397" key="GridCell.Tab.0.left" timestamp="1576653745808">
+    <state width="2512" height="393" key="GridCell.Tab.0.center/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576672528957" />
+    <state width="2512" height="393" key="GridCell.Tab.0.left" timestamp="1576672528957">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2512" height="397" key="GridCell.Tab.0.left/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653745808" />
-    <state width="2512" height="397" key="GridCell.Tab.0.right" timestamp="1576653745808">
+    <state width="2512" height="393" key="GridCell.Tab.0.left/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576672528957" />
+    <state width="2512" height="393" key="GridCell.Tab.0.right" timestamp="1576672528957">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2512" height="397" key="GridCell.Tab.0.right/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653745808" />
+    <state width="2512" height="393" key="GridCell.Tab.0.right/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576672528957" />
+    <state width="2512" height="488" key="GridCell.Tab.1.bottom" timestamp="1576654637939">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2512" height="488" key="GridCell.Tab.1.bottom/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576654637939" />
+    <state width="2512" height="488" key="GridCell.Tab.1.center" timestamp="1576654637939">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2512" height="488" key="GridCell.Tab.1.center/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576654637939" />
+    <state width="2512" height="488" key="GridCell.Tab.1.left" timestamp="1576654637939">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2512" height="488" key="GridCell.Tab.1.left/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576654637939" />
+    <state width="2512" height="488" key="GridCell.Tab.1.right" timestamp="1576654637939">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2512" height="488" key="GridCell.Tab.1.right/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576654637939" />
     <state x="791" y="470" width="968" height="523" key="IDE.errors.dialog" timestamp="1576500186373">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="791" y="470" width="968" height="523" key="IDE.errors.dialog/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576500186373" />
-    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576504375193">
+    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576653904939">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576504375193" />
+    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576653904939" />
   </component>
 </project>

@@ -1,10 +1,12 @@
 package handler.client;
 
+import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
+import io.netty.util.CharsetUtil;
 
 import java.net.SocketAddress;
 
@@ -18,28 +20,29 @@ public class ClientFirstOutHandler extends ChannelOutboundHandlerAdapter
     @Override
     public void bind(ChannelHandlerContext ctx, SocketAddress localAddress, ChannelPromise promise) throws Exception
     {
+        super.bind(ctx, localAddress, promise);
         System.out.println(ID+"绑定到本地端口");
     }
 
     @Override
     public void connect(ChannelHandlerContext ctx, SocketAddress remoteAddress, SocketAddress localAddress, ChannelPromise promise) throws Exception
     {
+        super.connect(ctx, remoteAddress, localAddress, promise);
         System.out.println(ID+"连接到远程服务器");
-        ctx.connect(remoteAddress, localAddress, promise);
     }
 
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception
     {
-        String m = "I'm A Text";
-        ctx.write(Unpooled.copiedBuffer(m.getBytes()));
-        ctx.flush();
+        System.out.println(ID+"写出: "+((ByteBuf) msg).toString(CharsetUtil.UTF_8));
+        ctx.writeAndFlush(msg, promise);
         promise.addListener((ChannelFutureListener) future -> System.out.println("Done"));
     }
 
     @Override
     public void flush(ChannelHandlerContext ctx) throws Exception
     {
+        super.flush(ctx);
         ctx.flush();
     }
 }
