@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1525dc-f312-4561-a59d-820303797496" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/ServerSecondInHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/chap6_exa3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/client/LastInboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/client/LastOutboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/client/OneInboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/client/OneOutboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/server/LastInboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/server/LastOutboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/server/OneInboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/handler/server/OneOutboundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/src/main/java/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap6_exa3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstInHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/server/ServerFirstInHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap6_exa2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chap6_exa2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/handler/client/ClientFirstInHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/client/ClientFirstInHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/handler/server/ServerFirstInHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/server/ServerFirstInHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Server$1.class" afterDir="false" />
@@ -43,11 +69,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../c3p0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cloudvideo-mashilong" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager" selected="Application.Client">
@@ -112,7 +139,11 @@
       <workItem from="1576500015823" duration="4744000" />
       <workItem from="1576566639970" duration="15000" />
       <workItem from="1576652805451" duration="11546000" />
-      <workItem from="1576674705358" duration="3176000" />
+      <workItem from="1576674705358" duration="3744000" />
+      <workItem from="1578221775436" duration="5000" />
+      <workItem from="1578809795839" duration="519000" />
+      <workItem from="1578813388077" duration="3633000" />
+      <workItem from="1578817807670" duration="3340000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1576504366939</created>
@@ -142,18 +173,27 @@
       <option name="project" value="LOCAL" />
       <updated>1576677139132</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6">
+      <created>1576678074896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576678074896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
-    <option name="LAST_COMMIT_MESSAGE" value="5" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1088" y="445" width="381" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1576677617364">
@@ -164,30 +204,34 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="858" y="392" width="833" height="679" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576500029786" />
-    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2" timestamp="1576677139020">
+    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2" timestamp="1576678074838">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677139020" />
-    <state x="1047" y="492" key="FileChooserDialogImpl" timestamp="1576675260705">
+    <state x="793" y="324" width="964" height="816" key="CommitChangelistDialog2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576678074838" />
+    <state x="1047" y="492" width="494" height="510" key="FileChooserDialogImpl" timestamp="1578817666874">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1047" y="492" key="FileChooserDialogImpl/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576675260705" />
-    <state width="2512" height="393" key="GridCell.Tab.0.bottom" timestamp="1576677837214">
-      <screen x="0" y="28" width="2560" height="1412" />
+    <state x="1047" y="492" width="494" height="510" key="FileChooserDialogImpl/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817666874" />
+    <state width="1872" height="393" key="GridCell.Tab.0.bottom" timestamp="1578822467614">
+      <screen x="2560" y="192" width="1920" height="1080" />
     </state>
-    <state width="2512" height="393" key="GridCell.Tab.0.bottom/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677837214" />
-    <state width="2512" height="393" key="GridCell.Tab.0.center" timestamp="1576677837214">
-      <screen x="0" y="28" width="2560" height="1412" />
+    <state width="2512" height="393" key="GridCell.Tab.0.bottom/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817710881" />
+    <state width="1872" height="393" key="GridCell.Tab.0.bottom/0.28.2560.1412/2560.192.1920.1080@2560.192.1920.1080" timestamp="1578822467614" />
+    <state width="1872" height="393" key="GridCell.Tab.0.center" timestamp="1578822467614">
+      <screen x="2560" y="192" width="1920" height="1080" />
     </state>
-    <state width="2512" height="393" key="GridCell.Tab.0.center/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677837214" />
-    <state width="2512" height="393" key="GridCell.Tab.0.left" timestamp="1576677837214">
-      <screen x="0" y="28" width="2560" height="1412" />
+    <state width="2512" height="393" key="GridCell.Tab.0.center/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817710881" />
+    <state width="1872" height="393" key="GridCell.Tab.0.center/0.28.2560.1412/2560.192.1920.1080@2560.192.1920.1080" timestamp="1578822467614" />
+    <state width="1872" height="393" key="GridCell.Tab.0.left" timestamp="1578822467614">
+      <screen x="2560" y="192" width="1920" height="1080" />
     </state>
-    <state width="2512" height="393" key="GridCell.Tab.0.left/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677837214" />
-    <state width="2512" height="393" key="GridCell.Tab.0.right" timestamp="1576677837214">
-      <screen x="0" y="28" width="2560" height="1412" />
+    <state width="2512" height="393" key="GridCell.Tab.0.left/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817710881" />
+    <state width="1872" height="393" key="GridCell.Tab.0.left/0.28.2560.1412/2560.192.1920.1080@2560.192.1920.1080" timestamp="1578822467614" />
+    <state width="1872" height="393" key="GridCell.Tab.0.right" timestamp="1578822467614">
+      <screen x="2560" y="192" width="1920" height="1080" />
     </state>
-    <state width="2512" height="393" key="GridCell.Tab.0.right/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677837214" />
+    <state width="2512" height="393" key="GridCell.Tab.0.right/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817710881" />
+    <state width="1872" height="393" key="GridCell.Tab.0.right/0.28.2560.1412/2560.192.1920.1080@2560.192.1920.1080" timestamp="1578822467614" />
     <state width="2512" height="488" key="GridCell.Tab.1.bottom" timestamp="1576654637939">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
@@ -208,9 +252,13 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="791" y="470" width="968" height="523" key="IDE.errors.dialog/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576500186373" />
-    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576677148556">
+    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576678123274">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576677148556" />
+    <state x="875" y="470" width="800" height="524" key="Vcs.Push.Dialog.v2/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1576678123274" />
+    <state x="454" y="436" width="1641" height="592" key="new project wizard" timestamp="1578817690004">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state x="454" y="436" width="1641" height="592" key="new project wizard/0.28.2560.1412/2560.192.1920.1080@0.28.2560.1412" timestamp="1578817690004" />
   </component>
 </project>

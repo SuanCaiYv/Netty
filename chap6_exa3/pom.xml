@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>chap6_exa2</artifactId>
+    <artifactId>chap6_exa3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -38,4 +38,5 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
 </project>
