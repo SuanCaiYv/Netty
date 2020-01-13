@@ -5,6 +5,7 @@ import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
+import io.netty.util.ReferenceCountUtil;
 
 /**
  * @author joker
@@ -15,8 +16,22 @@ public class OneInboundHandler extends ChannelInboundHandlerAdapter
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
     {
-        ByteBuf byteBuf = (ByteBuf) msg;
-        System.out.println("Server读取到了: "+byteBuf.toString(CharsetUtil.UTF_8));
+        ByteBuf byteBuf;
+        String str = "";
+        while (!"exit".equals(str)) {
+            byteBuf = (ByteBuf) msg;
+            str = byteBuf.toString(CharsetUtil.UTF_8);
+            System.out.println("Server读取到了: "+str);
+            ctx.writeAndFlush(Unpooled.copiedBuffer(("服务端: "+str).getBytes()));
+            ReferenceCountUtil.release(msg);
+        }
+        ctx.channel().closeFuture();
+    }
+
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception
+    {
+        System.out.println("读取完成");
     }
 
     @Override
