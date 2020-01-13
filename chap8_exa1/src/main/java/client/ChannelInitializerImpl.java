@@ -1,5 +1,7 @@
 package client;
 
+import handler.client.OneInbound;
+import handler.client.OneOutbound;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 
@@ -12,6 +14,7 @@ public class ChannelInitializerImpl extends ChannelInitializer<SocketChannel>
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {
-        ;
+        ch.pipeline().addLast(new OneOutbound());
+        ch.pipeline().addLast(new OneInbound());
     }
 }

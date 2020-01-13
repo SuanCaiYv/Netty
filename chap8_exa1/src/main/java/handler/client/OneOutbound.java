@@ -1,6 +1,8 @@
 package handler.client;
 
+import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
+import io.netty.channel.ChannelPromise;
 
 /**
  * @author SuanCaiYv
@@ -8,4 +10,15 @@ import io.netty.channel.ChannelOutboundHandlerAdapter;
  */
 public class OneOutbound extends ChannelOutboundHandlerAdapter
 {
+    @Override
+    public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception
+    {
+        ctx.write(msg, promise);
+    }
+
+    @Override
+    public void flush(ChannelHandlerContext ctx) throws Exception
+    {
+        ctx.flush();
+    }
 }
