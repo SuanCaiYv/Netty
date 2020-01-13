@@ -19,6 +19,7 @@ public class OneOutboundHandler extends ChannelOutboundHandlerAdapter
         System.out.println("Client写出: "+byteBuf.toString(CharsetUtil.UTF_8));
         // 不使用ctx进行写,则不会发生实际的写操作
         ctx.write(msg, promise);
+        // pipeline()的flush()方法会调用下一个OutboundHandler的flush()方法
+        ctx.pipeline().flush();
     }
-
 }

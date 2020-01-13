@@ -1,9 +1,6 @@
 package client;
 
-import handler.client.LastInboundHandler;
-import handler.client.LastOutboundHandler;
-import handler.client.OneInboundHandler;
-import handler.client.OneOutboundHandler;
+import handler.client.*;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -38,11 +35,13 @@ public class Client
                     protected void initChannel(SocketChannel ch) throws Exception
                     {
                         ch.pipeline().addLast(new LastOutboundHandler());
+                        ch.pipeline().addLast(new TwoOutboundHandler());
                         ch.pipeline().addLast(new OneOutboundHandler());
                         ch.pipeline().addLast(new OneInboundHandler());
                         ch.pipeline().addLast(new LastInboundHandler());
                     }
                 });
+        // 一定是连接到远程节点才能进行下一步
         ChannelFuture future = bootstrap.connect().sync();
         future.channel().closeFuture().sync();
         group.shutdownGracefully();

@@ -1,36 +1,35 @@
-package server;
+package client;
 
-import handler.server.*;
-import io.netty.bootstrap.ServerBootstrap;
+import handler.client.*;
+import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.epoll.EpollEventLoopGroup;
-import io.netty.channel.epoll.EpollServerSocketChannel;
+import io.netty.channel.epoll.EpollSocketChannel;
 import io.netty.channel.socket.SocketChannel;
 
 import java.net.InetSocketAddress;
 
 /**
  * @author joker
- * @time 2020/1/12 下午4:32
+ * @date 2020/1/13 上午11:02
  */
-public class Server
+public class Client0
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Server server = new Server();
-        server.run();
+        Client0 client = new Client0();
+        client.run();
     }
     public void run() throws InterruptedException
     {
-        ServerBootstrap bootstrap = new ServerBootstrap();
-        EventLoopGroup group1 = new EpollEventLoopGroup();
-        EventLoopGroup group2 = new EpollEventLoopGroup();
-        bootstrap.group(group1, group2)
-                .channel(EpollServerSocketChannel.class)
-                .localAddress(new InetSocketAddress(8189))
-                .childHandler(new ChannelInitializer<SocketChannel>()
+        Bootstrap bootstrap = new Bootstrap();
+        EventLoopGroup group = new EpollEventLoopGroup();
+        bootstrap.group(group)
+                .channel(EpollSocketChannel.class)
+                .remoteAddress(new InetSocketAddress("localhost", 8189))
+                .handler(new ChannelInitializer<SocketChannel>()
                 {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception
@@ -38,14 +37,12 @@ public class Server
                         ch.pipeline().addLast(new LastOutboundHandler());
                         ch.pipeline().addLast(new TwoOutboundHandler());
                         ch.pipeline().addLast(new OneOutboundHandler());
-                        ch.pipeline().addLast(new OneInboundHandler());
+                        ch.pipeline().addLast(new InboundHandler());
                         ch.pipeline().addLast(new LastInboundHandler());
                     }
                 });
-        // 只是绑定到端口，不一定是和客户端连接上
-        ChannelFuture future = bootstrap.bind().sync();
+        ChannelFuture future = bootstrap.connect().sync();
         future.channel().closeFuture().sync();
-        group1.shutdownGracefully().sync();
-        group2.shutdownGracefully().sync();
+        group.shutdownGracefully();
     }
 }
