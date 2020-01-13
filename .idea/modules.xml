@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chap0_exa1/chap0_exa1.iml" filepath="$PROJECT_DIR$/chap0_exa1/chap0_exa1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap2_exa1/chap2_exa1.iml" filepath="$PROJECT_DIR$/chap2_exa1/chap2_exa1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap4_exa1/chap4_exa1.iml" filepath="$PROJECT_DIR$/chap4_exa1/chap4_exa1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap6_exa1/chap6_exa1.iml" filepath="$PROJECT_DIR$/chap6_exa1/chap6_exa1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap6_exa2/chap6_exa2.iml" filepath="$PROJECT_DIR$/chap6_exa2/chap6_exa2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap6_exa3/chap6_exa3.iml" filepath="$PROJECT_DIR$/chap6_exa3/chap6_exa3.iml" />
+    </modules>
+  </component>
+</project>
