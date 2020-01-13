@@ -17,7 +17,7 @@ public class OneInboundHandler extends ChannelInboundHandlerAdapter
     public void channelActive(ChannelHandlerContext ctx) throws Exception
     {
         System.out.println("连接处于活跃状态, 可以开始IO操作");
-        ctx.writeAndFlush(Unpooled.copiedBuffer("qwer".getBytes()));
+        ctx.write(Unpooled.copiedBuffer("我是客户端".getBytes()));
     }
 
     @Override
@@ -25,12 +25,12 @@ public class OneInboundHandler extends ChannelInboundHandlerAdapter
     {
         ByteBuf byteBuf = (ByteBuf) msg;
         System.out.println("第"+counter+"次, 读到了"+byteBuf.toString(CharsetUtil.UTF_8));
-        ++counter;
     }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception
     {
         System.out.println("第"+counter+"次读取完成");
+        ++counter;
     }
 }
