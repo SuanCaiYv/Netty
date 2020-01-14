@@ -1,9 +1,6 @@
 package client;
 
-import handler.client.LastIn;
-import handler.client.LastOut;
-import handler.client.OneOut;
-import handler.client.TwoIn;
+import handler.client.*;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 
@@ -18,6 +15,8 @@ public class TwoChannelInitializer extends ChannelInitializer<SocketChannel>
     {
         ch.pipeline().addLast(new LastOut());
         ch.pipeline().addLast(new OneOut());
+        ch.pipeline().addLast(new StringToByteEncoder());
+        ch.pipeline().addLast(new IntegerToStringEncoder());
         ch.pipeline().addLast(new TwoIn());
         ch.pipeline().addLast(new LastIn());
     }

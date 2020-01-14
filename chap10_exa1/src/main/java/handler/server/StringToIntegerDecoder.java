@@ -6,7 +6,7 @@ import io.netty.handler.codec.MessageToMessageDecoder;
 import java.util.List;
 
 /**
- * POJO to POJO的解码器,泛型是from类型
+ * POJO to POJO的解码器, 泛型是from类型
  * @author SuanCaiYv
  * @time 2020/1/14 下午5:22
  */
@@ -14,10 +14,10 @@ public class StringToIntegerDecoder extends MessageToMessageDecoder<String>
 {
     /**
      * 此解码器只有这一个方法
-     * @param ctx
-     * @param msg
-     * @param out
-     * @throws Exception
+     * @param ctx NA
+     * @param msg NA
+     * @param out NA
+     * @throws Exception NA
      */
     @Override
     protected void decode(ChannelHandlerContext ctx, String msg, List<Object> out) throws Exception
