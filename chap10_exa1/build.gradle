@@ -5,7 +5,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 13
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -13,5 +13,4 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'io.netty', name: 'netty-all', version: '4.1.44.Final'
 }
