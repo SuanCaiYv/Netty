@@ -23,6 +23,8 @@ public class Client
     public void run() throws InterruptedException
     {
         EventLoopGroup group = new EpollEventLoopGroup();
+        // Bootstrap可以用于客户端和无协议的连接
+        // bind()和connect()方法都会返回一个已连接的channel,前者是UDP的连接,后者是TCP的连接
         Bootstrap bootstrap = new Bootstrap();
         bootstrap.group(group)
                 .remoteAddress(new InetSocketAddress("localhost", 8189))
@@ -42,6 +44,7 @@ public class Client
                 }
             }
         });
+        future.channel().closeFuture().sync();
         group.shutdownGracefully().sync();
     }
 }

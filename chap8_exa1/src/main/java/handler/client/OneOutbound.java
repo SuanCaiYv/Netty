@@ -13,7 +13,7 @@ public class OneOutbound extends ChannelOutboundHandlerAdapter
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception
     {
-        ctx.write(msg, promise);
+        ctx.writeAndFlush(msg, promise);
     }
 
     @Override
