@@ -11,23 +11,23 @@ import java.net.InetSocketAddress;
 
 /**
  * @author SuanCaiYv
- * @time 2020/1/14 下午4:21
+ * @time 2020/1/14 下午5:41
  */
-public class Client
+public class Client0
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Client client = new Client();
-        client.run();
+        Client0 client0 = new Client0();
+        client0.run();
     }
     public void run() throws InterruptedException
     {
         Bootstrap bootstrap = new Bootstrap();
         EventLoopGroup group = new EpollEventLoopGroup();
         bootstrap.group(group)
-                .remoteAddress(new InetSocketAddress("localhost", 8189))
+                .remoteAddress(new InetSocketAddress("localhost", 8190))
                 .channel(EpollSocketChannel.class)
-                .handler(new OneChannelInitializer());
+                .handler(new TwoChannelInitializer());
         ChannelFuture future = bootstrap.connect();
         future.addListener((ChannelFutureListener) future1 -> {
             if (future1.isSuccess()) {

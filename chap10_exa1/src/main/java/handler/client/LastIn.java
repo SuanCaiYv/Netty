@@ -13,5 +13,6 @@ public class LastIn extends ChannelInboundHandlerAdapter
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception
     {
         System.out.println(cause.getMessage());
+        ctx.channel().closeFuture().sync();
     }
 }

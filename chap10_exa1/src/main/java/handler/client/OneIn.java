@@ -13,6 +13,12 @@ public class OneIn extends ChannelInboundHandlerAdapter
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception
     {
-        ctx.write(Unpooled.copiedBuffer("123".getBytes()));
+        int num = 123;
+        byte[] bytes = new byte[4];
+        bytes[0] = (byte) ((num >> 24) & 0xFF);
+        bytes[1] = (byte) ((num >> 16) & 0xFF);
+        bytes[2] = (byte) ((num >> 8) & 0xFF);
+        bytes[3] = (byte) ((num) & 0xFF);
+        ctx.write(Unpooled.copiedBuffer(bytes));
     }
 }

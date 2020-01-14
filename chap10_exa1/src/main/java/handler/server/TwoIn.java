@@ -4,10 +4,10 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
- * @author joker
- * @date 2020/1/14 下午4:24
+ * @author SuanCaiYv
+ * @time 2020/1/14 下午10:23
  */
-public class OneIn extends ChannelInboundHandlerAdapter
+public class TwoIn extends ChannelInboundHandlerAdapter
 {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception

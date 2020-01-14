@@ -1,22 +1,24 @@
-package server;
+package client;
 
-import handler.server.*;
+import handler.client.LastIn;
+import handler.client.LastOut;
+import handler.client.OneOut;
+import handler.client.TwoIn;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 
 /**
- * @author joker
- * @date 2020/1/14 下午4:27
+ * @author SuanCaiYv
+ * @time 2020/1/14 下午5:40
  */
-public class OneChannelInitializer extends ChannelInitializer<SocketChannel>
+public class TwoChannelInitializer extends ChannelInitializer<SocketChannel>
 {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {
         ch.pipeline().addLast(new LastOut());
         ch.pipeline().addLast(new OneOut());
-        ch.pipeline().addLast(new ByteToIntegerDecoder());
-        ch.pipeline().addLast(new OneIn());
+        ch.pipeline().addLast(new TwoIn());
         ch.pipeline().addLast(new LastIn());
     }
 }
