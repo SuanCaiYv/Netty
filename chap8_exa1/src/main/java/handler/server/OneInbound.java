@@ -12,6 +12,7 @@ import io.netty.util.CharsetUtil;
  */
 public class OneInbound extends ChannelInboundHandlerAdapter
 {
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
     {
