@@ -2,6 +2,7 @@ package handler.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
+import io.netty.util.ReferenceCountUtil;
 
 import java.util.List;
 
@@ -25,5 +26,6 @@ public class StringToIntegerDecoder extends MessageToMessageDecoder<String>
         Integer num = Integer.parseInt(msg);
         out.add(num);
         System.out.println("转换成Integer为: "+num);
+        ReferenceCountUtil.release(msg);
     }
 }

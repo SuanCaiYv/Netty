@@ -8,7 +8,7 @@ import io.netty.handler.codec.TooLongFrameException;
 import java.util.List;
 
 /**
- * 解码器属于入站操作
+ * 解码器属于入站操作, 资源释放貌似不能释放ByteBuf的内容
  * @author SuanCaiYv
  * @time 2020/1/14 下午5:22
  */
@@ -16,6 +16,14 @@ public class ByteToStringDecoder extends ByteToMessageDecoder
 {
     // 设置最大帧大小
     private static final int MAX_FRAME_SIZE = 1024;
+
+    /**
+     * 当有入站消息入站时被调用, 此时入站消息在in里面, 然后把消息转换成out并把out传给下一个Handler的msg(或者说下一个的msg就是out的一个引用)
+     * @param ctx NA
+     * @param in NA
+     * @param out NA
+     * @throws Exception NA
+     */
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception
     {
@@ -44,6 +52,7 @@ public class ByteToStringDecoder extends ByteToMessageDecoder
             }
         }
         // out数据会传递到下一个Handler,在那里作为msg出现
+        // ReferenceCountUtil.release(in);
     }
 
     /**

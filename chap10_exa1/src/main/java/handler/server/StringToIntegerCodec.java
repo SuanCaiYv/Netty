@@ -2,6 +2,7 @@ package handler.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageCodec;
+import io.netty.util.ReferenceCountUtil;
 
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class StringToIntegerCodec extends MessageToMessageCodec<String, Integer>
     protected void encode(ChannelHandlerContext ctx, Integer msg, List<Object> out) throws Exception
     {
         out.add(String.valueOf(msg));
+        ReferenceCountUtil.release(msg);
     }
 
     /**
@@ -37,5 +39,6 @@ public class StringToIntegerCodec extends MessageToMessageCodec<String, Integer>
     protected void decode(ChannelHandlerContext ctx, String msg, List<Object> out) throws Exception
     {
         out.add(Integer.parseInt(msg));
+        ReferenceCountUtil.release(msg);
     }
 }
