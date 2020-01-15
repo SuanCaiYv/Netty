@@ -6,7 +6,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
-import io.netty.util.ReferenceCountUtil;
 
 /**
  * @author SuanCaiYv
@@ -17,6 +16,7 @@ public class OneIn extends ChannelInboundHandlerAdapter
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
     {
+        // HttpObjectAggregator需要先转换成HttpObject, 再转换成FullHttp!!!!!!
         HttpObject object = (HttpObject) msg;
         FullHttpRequest request = (FullHttpRequest) object;
         String txt = request.content().toString(CharsetUtil.UTF_8);

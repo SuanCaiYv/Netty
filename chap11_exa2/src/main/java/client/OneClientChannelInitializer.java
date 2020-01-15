@@ -17,6 +17,12 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
  */
 public class OneClientChannelInitializer extends ChannelInitializer<SocketChannel>
 {
+    /**
+     * HttpClientCodec整合了解码和编码Http
+     * HttpObjectAggregator可以返回一个完整(Full)的Http响应, 但是, 要注意类型转换的坑!!!
+     * @param ch NA
+     * @throws Exception NA
+     */
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {
@@ -24,6 +30,7 @@ public class OneClientChannelInitializer extends ChannelInitializer<SocketChanne
         pipeline.addLast(new LastOut());
         pipeline.addLast(new OneOut());
         pipeline.addLast("codec", new HttpClientCodec());
+        // 设置Http最大为10M
         pipeline.addLast("aggregator", new HttpObjectAggregator(1024*1024*10));
         // 客户端添加解压缩来处理来自服务端的压缩内容
         pipeline.addLast(new HttpContentDecompressor());

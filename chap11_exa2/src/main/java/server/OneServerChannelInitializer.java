@@ -12,6 +12,12 @@ import io.netty.handler.codec.http.*;
  */
 public class OneServerChannelInitializer extends ChannelInitializer<SocketChannel>
 {
+    /**
+     * 执行过程: HttpServerCodec把字节流转成散装的Http, HttpObjectAggregator把散装的聚合成完整的
+     * 出站: HttpServerCodec把Http(完整的或分散的)转换成字节流, 在OneOut完成发送
+     * @param ch NA
+     * @throws Exception NA
+     */
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {
