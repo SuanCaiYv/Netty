@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/handler/FourIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/handler/ThreeIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/handler/ThreeIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastOut$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/OneIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/OneOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastOut$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tools/SSLContextGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/OneClientChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/LastIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/LastOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/OneIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/OneOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/LastIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/LastOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/OneIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/OneOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/OneServerChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/SSLContextGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap10_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap10_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/ThreeChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/ThreeChannelInitializer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1WQjXZE9cPBHcBotYuCYgYAtMyF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
+      <module name="chap11_exa2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <module name="chap11_exa2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="" />
+      <created>1579088752937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579088752937</updated>
+      <workItem from="1579088754013" duration="3558000" />
+      <workItem from="1579092321769" duration="1235000" />
+      <workItem from="1579093759390" duration="312000" />
+      <workItem from="1579094612874" duration="2178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="262" width="374" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1579094070381">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="768" y="262" width="374" height="579" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1579094070381" />
+    <state width="1868" height="276" key="GridCell.Tab.0.bottom" timestamp="1579096989846">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="276" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989846" />
+    <state width="1868" height="276" key="GridCell.Tab.0.center" timestamp="1579096989845">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="276" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989845" />
+    <state width="1868" height="276" key="GridCell.Tab.0.left" timestamp="1579096989844">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="276" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989844" />
+    <state width="1868" height="276" key="GridCell.Tab.0.right" timestamp="1579096989845">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="276" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989845" />
+    <state width="1868" height="340" key="GridCell.Tab.1.bottom" timestamp="1579092312016">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="340" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579092312016" />
+    <state width="1868" height="340" key="GridCell.Tab.1.center" timestamp="1579092312015">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="340" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579092312015" />
+    <state width="1868" height="340" key="GridCell.Tab.1.left" timestamp="1579092312015">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="340" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579092312015" />
+    <state width="1868" height="340" key="GridCell.Tab.1.right" timestamp="1579092312015">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="340" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579092312015" />
+    <state x="443" y="131" width="1024" height="841" key="SettingsEditor" timestamp="1579091325163">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="443" y="131" width="1024" height="841" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1579091325163" />
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1579092311844">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1579092311844" />
+  </component>
+</project>
