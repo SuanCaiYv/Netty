@@ -11,13 +11,13 @@ import java.net.InetSocketAddress;
 
 /**
  * @author SuanCaiYv
- * @time 2020/1/15 上午10:55
+ * @time 2020/1/15 下午6:59
  */
-public class Server
+public class ThreeServer
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Server server = new Server();
+        ThreeServer server = new ThreeServer();
         server.run();
     }
     public void run() throws InterruptedException
@@ -26,9 +26,9 @@ public class Server
         EventLoopGroup group1 = new EpollEventLoopGroup();
         EventLoopGroup group2 = new EpollEventLoopGroup();
         bootstrap.group(group1, group2)
-                .localAddress(new InetSocketAddress(8189))
+                .localAddress(new InetSocketAddress(8191))
                 .channel(EpollServerSocketChannel.class)
-                .childHandler(new OneChannelInitializer());
+                .childHandler(new ThreeChannelInitializer());
         ChannelFuture future = bootstrap.bind();
         future.addListener((ChannelFutureListener) future1 ->{
             if (future1.isSuccess()) {
