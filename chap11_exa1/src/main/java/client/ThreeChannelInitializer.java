@@ -21,7 +21,7 @@ public class ThreeChannelInitializer extends ChannelInitializer<SocketChannel>
         pipeline.addLast("codec", new HttpClientCodec());
         pipeline.addLast(new HttpObjectAggregator(1024*1024));
         // 客户端添加解压缩来处理来自服务端的压缩内容
-        pipeline.addLast(new HttpContentDecompressor());
+        // pipeline.addLast(new HttpContentDecompressor());
         pipeline.addLast(new LastOut());
         pipeline.addLast(new OneOut());
         pipeline.addLast(new ByteToStringCodec());
