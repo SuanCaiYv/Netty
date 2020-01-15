@@ -8,6 +8,7 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpClientCodec;
+import io.netty.handler.codec.http.HttpContentDecompressor;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 
 /**
@@ -25,7 +26,7 @@ public class OneClientChannelInitializer extends ChannelInitializer<SocketChanne
         pipeline.addLast("codec", new HttpClientCodec());
         pipeline.addLast("aggregator", new HttpObjectAggregator(1024*1024*10));
         // 客户端添加解压缩来处理来自服务端的压缩内容
-        // pipeline.addLast(new HttpContentDecompressor());
+        pipeline.addLast(new HttpContentDecompressor());
         pipeline.addLast(new OneIn());
         pipeline.addLast(new LastIn());
     }

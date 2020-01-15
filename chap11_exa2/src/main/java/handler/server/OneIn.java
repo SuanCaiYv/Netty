@@ -1,5 +1,7 @@
 package handler.server;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
@@ -17,11 +19,12 @@ public class OneIn extends ChannelInboundHandlerAdapter
     {
         HttpObject object = (HttpObject) msg;
         FullHttpRequest request = (FullHttpRequest) object;
-        DefaultFullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.ACCEPTED);
         String txt = request.content().toString(CharsetUtil.UTF_8);
         System.out.println("读到: "+txt);
+        FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.ACCEPTED);
         String str = "another text";
-        response.content().writeBytes(str.getBytes());
+        ByteBuf byteBuf = Unpooled.copiedBuffer(str.getBytes());
+        response.content().writeBytes(byteBuf);
         response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/plain");
         response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
         ctx.write(response);

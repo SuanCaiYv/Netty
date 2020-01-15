@@ -14,6 +14,5 @@ public class OneOut extends ChannelOutboundHandlerAdapter
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception
     {
         ctx.writeAndFlush(msg, promise);
-        System.out.println(msg);
     }
 }

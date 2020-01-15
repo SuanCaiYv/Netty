@@ -2,76 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/handler/FourIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/handler/ThreeIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/handler/ThreeIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastOut$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/LastOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/OneIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/client/OneOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastOut$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/LastOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneIn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/tools/SSLContextGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/OneClientChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/LastIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/LastOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/OneIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/client/OneOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/LastIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/LastOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/OneIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/server/OneOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/OneServerChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/SSLContextGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap10_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap10_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/client/ThreeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/ThreeChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa1/src/main/java/server/ThreeChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/handler/server/OneIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/server/OneIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/server/OneIn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,8 +139,16 @@
       <workItem from="1579088754013" duration="3558000" />
       <workItem from="1579092321769" duration="1235000" />
       <workItem from="1579093759390" duration="312000" />
-      <workItem from="1579094612874" duration="2178000" />
+      <workItem from="1579094612874" duration="2678000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1579097016854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579097016854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,28 +156,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="768" y="262" width="374" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1579094070381">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="768" y="262" width="374" height="579" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1579094070381" />
-    <state width="1868" height="276" key="GridCell.Tab.0.bottom" timestamp="1579096989846">
+    <state x="445" y="144" width="1019" height="815" key="CommitChangelistDialog2" timestamp="1579097501503">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1868" height="276" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989846" />
-    <state width="1868" height="276" key="GridCell.Tab.0.center" timestamp="1579096989845">
+    <state x="445" y="144" width="1019" height="815" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1579097501503" />
+    <state width="1868" height="276" key="GridCell.Tab.0.bottom" timestamp="1579097480323">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1868" height="276" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989845" />
-    <state width="1868" height="276" key="GridCell.Tab.0.left" timestamp="1579096989844">
+    <state width="1868" height="276" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579097480323" />
+    <state width="1868" height="276" key="GridCell.Tab.0.center" timestamp="1579097480322">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1868" height="276" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989844" />
-    <state width="1868" height="276" key="GridCell.Tab.0.right" timestamp="1579096989845">
+    <state width="1868" height="276" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579097480322" />
+    <state width="1868" height="276" key="GridCell.Tab.0.left" timestamp="1579097480321">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="1868" height="276" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579096989845" />
+    <state width="1868" height="276" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579097480321" />
+    <state width="1868" height="276" key="GridCell.Tab.0.right" timestamp="1579097480323">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1868" height="276" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579097480323" />
     <state width="1868" height="340" key="GridCell.Tab.1.bottom" timestamp="1579092312016">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

@@ -4,10 +4,7 @@ import handler.server.*;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.handler.codec.http.HttpObjectAggregator;
-import io.netty.handler.codec.http.HttpRequestDecoder;
-import io.netty.handler.codec.http.HttpResponseEncoder;
-import io.netty.handler.codec.http.HttpServerCodec;
+import io.netty.handler.codec.http.*;
 
 /**
  * @author SuanCaiYv
@@ -25,7 +22,7 @@ public class OneServerChannelInitializer extends ChannelInitializer<SocketChanne
         // 10MB为最大消息大小
         pipeline.addLast(new HttpObjectAggregator(1024*1024*10));
         // 服务器端添加压缩来实现对于内容的压缩, netty支持deflate和gzip
-        // pipeline.addLast(new HttpContentCompressor());
+        pipeline.addLast(new HttpContentCompressor());
         pipeline.addLast(new OneIn());
         pipeline.addLast(new LastIn());
     }
