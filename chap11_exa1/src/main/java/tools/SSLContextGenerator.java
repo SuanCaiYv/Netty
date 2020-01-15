@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.security.KeyStore;
 
 /**
+ * 此类用来获得TLS加密
  * @author SuanCaiYv
  * @time 2020/1/15 下午1:04
  */

@@ -12,6 +12,11 @@ import io.netty.handler.codec.http.HttpResponseEncoder;
  */
 public class TwoChannelInitializer extends ChannelInitializer<SocketChannel>
 {
+    /**
+     * 服务端为"Request"解码, 编码"Response"
+     * @param ch NA
+     * @throws Exception NA
+     */
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {

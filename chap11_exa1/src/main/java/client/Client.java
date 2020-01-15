@@ -27,7 +27,7 @@ public class Client
         bootstrap.group(group)
                 .remoteAddress(new InetSocketAddress("localhost", 8189))
                 .channel(EpollSocketChannel.class)
-                .handler(new OneChannelInitializer());
+                .handler(new TwoChannelInitializer());
         ChannelFuture future = bootstrap.connect();
         future.addListener((ChannelFutureListener) future1 -> {
             if (future1.isSuccess()) {
