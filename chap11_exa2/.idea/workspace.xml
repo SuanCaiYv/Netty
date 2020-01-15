@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/gradlew.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +134,7 @@
       <workItem from="1579092321769" duration="1235000" />
       <workItem from="1579093759390" duration="312000" />
       <workItem from="1579094612874" duration="3432000" />
+      <workItem from="1579098665342" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1579097016854</created>
