@@ -9,6 +9,12 @@ import io.netty.channel.*;
 public class LastOut extends ChannelOutboundHandlerAdapter
 {
     @Override
+    public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception
+    {
+        ctx.writeAndFlush(msg, promise);
+    }
+
+    @Override
     public void flush(ChannelHandlerContext ctx) throws Exception
     {
         ctx.flush();

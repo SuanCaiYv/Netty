@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="" />
+    <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/ByteToStringCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/OneIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/ByteToStringCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/OneIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/client/OneChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/client/OneChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/LastOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/LastOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/HeartbeatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/HeartbeatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/LastOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/LastOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/server/OneChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/server/OneChannelInitializer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +144,8 @@
       <workItem from="1579094612874" duration="3432000" />
       <workItem from="1579098665342" duration="9000" />
       <workItem from="1579099578837" duration="673000" />
+      <workItem from="1579154858390" duration="273000" />
+      <workItem from="1579249669103" duration="742000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1579097016854</created>
