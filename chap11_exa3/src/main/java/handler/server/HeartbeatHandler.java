@@ -11,6 +11,13 @@ import io.netty.handler.timeout.IdleStateEvent;
 public class HeartbeatHandler extends ChannelInboundHandlerAdapter
 {
     private int count = 0;
+
+    /**
+     * 此方法的默认实现是转发给下一个: ctx.fireUserEventTriggered(evt); 所以最后会在这里被实际地处理
+     * @param ctx NA
+     * @param evt NA
+     * @throws Exception NA
+     */
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception
     {

@@ -8,6 +8,8 @@ import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 
 /**
+ * 心跳机制具体流程, 设置心跳时间, 监听Channel, 如果时间内一直没有发生某一指定的事件, 到时间了会触发一个userEventTriggered()方法, 此方法的evt参数包含触发的事件具体是什么事件
+ * 然后会按入站流向进行依次传递, 直到遇到可以处理userEventTriggered()方法的地方, 再进行细节处理
  * @author SuanCaiYv
  * @time 2020/1/17 下午4:51
  */
