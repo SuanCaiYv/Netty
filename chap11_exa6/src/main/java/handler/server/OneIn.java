@@ -16,7 +16,7 @@ OneIn extends ChannelInboundHandlerAdapter
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception
     {
-        File file = new File("/home/joker/IdeaProjects/Netty/chap11_exa4/src/main/java/static/IMG_0286.JPG");
+        File file = new File("/home/joker/IdeaProjects/Netty/chap11_exa6/src/main/java/static/IMG_0286.JPG");
         FileInputStream fileInputStream = new FileInputStream(file);
         // 开启ChunkedStream写入文件, new ChunkedStream(<文件输入流>)会自动把文件读成ChunkedInput类型
         // 这是一个可以逐块地读取的类型, 所以不会爆内存
