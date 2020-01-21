@@ -13,6 +13,11 @@ import io.netty.channel.socket.SocketChannel;
  */
 public class OneChannelInitializer extends ChannelInitializer<SocketChannel>
 {
+    /**
+     * 使用"零拷贝"的FileRegion实现文件的传输
+     * @param ch NA
+     * @throws Exception NA
+     */
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {

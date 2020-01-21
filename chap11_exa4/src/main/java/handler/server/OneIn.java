@@ -11,6 +11,11 @@ import java.io.FileInputStream;
  */
 public class OneIn extends ChannelInboundHandlerAdapter
 {
+    /**
+     * 使用FileRegion来完成文件的写入, FileRegion支持零拷贝, 可以不通过内存就把文件传输到channel通道里
+     * @param ctx NA
+     * @throws Exception NA
+     */
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception
     {

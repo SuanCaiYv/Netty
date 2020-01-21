@@ -29,7 +29,7 @@ public class OneIn extends ChannelInboundHandlerAdapter
     }
 
     /**
-     * 接收文件采用了分块接受并分块写入的方法
+     * 接收文件采用了分块接受并分块写入的方法(虽然在这个实例中可能不要分块)
      * 有一点需要注意, 就是, ByteBuf在整个channel生命周期内, 都是同一个, 所以要记得移动已读指针
      * @param ctx NA
      * @param msg NA
