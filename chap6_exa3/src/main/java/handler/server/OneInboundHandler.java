@@ -16,6 +16,7 @@ public class OneInboundHandler extends ChannelInboundHandlerAdapter
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
     {
+        System.out.println(msg.getClass().getName());
         ByteBuf byteBuf;
         String str = "";
         while (!"exit".equals(str)) {

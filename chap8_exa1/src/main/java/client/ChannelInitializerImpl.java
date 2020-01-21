@@ -14,8 +14,8 @@ public class ChannelInitializerImpl extends ChannelInitializer<SocketChannel>
 {
     /**
      * 自定义Handler处理器来完成Handler的添加,删除
-     * @param ch
-     * @throws Exception
+     * @param ch NA
+     * @throws Exception NA
      */
     @Override
     protected void initChannel(SocketChannel ch) throws Exception

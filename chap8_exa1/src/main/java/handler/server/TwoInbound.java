@@ -20,8 +20,8 @@ public class TwoInbound extends ChannelInboundHandlerAdapter
 {
     /**
      * 在服务中启动另一个客户端连接,并利用当前EventLoopgroup设置其Loopgroup以减少上下文切换的开支
-     * @param ctx
-     * @throws Exception
+     * @param ctx NA
+     * @throws Exception NA
      */
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception
