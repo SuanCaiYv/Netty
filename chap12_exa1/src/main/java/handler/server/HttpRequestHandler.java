@@ -14,11 +14,14 @@ public class HttpRequestHandler extends ChannelInboundHandlerAdapter
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception
     {
         if (msg instanceof FullHttpRequest) {
-            ;
-            // do work...
+            dealHttpRequest(ctx, (FullHttpRequest) msg);
         }
         else {
             ctx.fireChannelRead(msg);
         }
+    }
+    public void dealHttpRequest(ChannelHandlerContext ctx, FullHttpRequest request)
+    {
+        // do something...
     }
 }

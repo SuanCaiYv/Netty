@@ -12,7 +12,7 @@ public class LastIn extends ChannelInboundHandlerAdapter
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception
     {
-        System.out.println(cause.getMessage());
+        cause.printStackTrace();
         ctx.channel().close().sync();
     }
 }

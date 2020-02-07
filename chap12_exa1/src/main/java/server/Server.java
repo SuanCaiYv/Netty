@@ -7,7 +7,7 @@ import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.epoll.EpollServerSocketChannel;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.util.concurrent.ImmediateEventExecutor;
+import io.netty.util.concurrent.GlobalEventExecutor;
 
 /**
  * WebSocket协议实质上是Http的升级, 所谓的升级就是发送一个升级包(本质是一个Request, 包含了客户端信息)
@@ -24,7 +24,7 @@ public class Server
     public void run() throws InterruptedException
     {
         // 将会保存所有已经连接的WebSocket Channel
-        ChannelGroup channels = new DefaultChannelGroup(ImmediateEventExecutor.INSTANCE);
+        ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
         EventLoopGroup bossGroup = new EpollEventLoopGroup();
         EventLoopGroup workGroup = new EpollEventLoopGroup();
         ServerBootstrap serverBootstrap = new ServerBootstrap();
