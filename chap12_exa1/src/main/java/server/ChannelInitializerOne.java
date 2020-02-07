@@ -30,11 +30,11 @@ public class ChannelInitializerOne extends ChannelInitializer<SocketChannel>
         pipeline.addLast(new HttpServerCodec());
         pipeline.addLast(new HttpObjectAggregator(1024*1024*10));
         pipeline.addLast(new OneIn());
-        // pipeline.addLast(new HttpRequestHandler("/ws"));
         // 处理协议升级握手
         // pipeline.addLast(new WebSocketServerProtocolHandler("/ws"));
-        // pipeline.addLast(new WebSocketFrameToTextWebSocketFrame());
-        // pipeline.addLast(new WebSocketResquestHandler(channelGroup));
+        pipeline.addLast(new HttpRequestHandler());
+        pipeline.addLast(new WebSocketServerProtocolHandler("ws://127.0.0.1:8189/ws"));
+        pipeline.addLast(new WebSocketResquestHandler(channelGroup));
         pipeline.addLast(new LastIn());
     }
 }
