@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a19ee6d6-afcf-428d-a345-365485691ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/ByteToStringCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/OneIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/ByteToStringCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/OneIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/client/OneChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/client/OneChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/LastOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/client/LastOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/HeartbeatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/HeartbeatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/LastOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/handler/server/LastOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap11_exa3/src/main/java/server/OneChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa3/src/main/java/server/OneChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap11_exa6/src/main/java/handler/client/OneIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap11_exa6/src/main/java/handler/client/OneIn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -146,6 +151,9 @@
       <workItem from="1579099578837" duration="673000" />
       <workItem from="1579154858390" duration="273000" />
       <workItem from="1579249669103" duration="742000" />
+      <workItem from="1580917705684" duration="760000" />
+      <workItem from="1580967728886" duration="1018000" />
+      <workItem from="1580971786050" duration="2003000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1579097016854</created>
@@ -189,6 +197,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="445" y="144" width="1019" height="815" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1579098025944" />
+    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl" timestamp="1580973243738">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="743" y="312" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1580973243738" />
     <state width="1868" height="276" key="GridCell.Tab.0.bottom" timestamp="1579098044722">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

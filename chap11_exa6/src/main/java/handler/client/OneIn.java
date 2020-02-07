@@ -1,14 +1,8 @@
 package handler.client;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.PooledByteBufAllocator;
-import io.netty.buffer.Unpooled;
-import io.netty.buffer.UnpooledDirectByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.FileRegion;
-import io.netty.handler.codec.TooLongFrameException;
-import io.netty.handler.stream.ChunkedFile;
 
 import java.io.File;
 import java.io.FileOutputStream;

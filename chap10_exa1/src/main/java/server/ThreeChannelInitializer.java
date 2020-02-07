@@ -13,7 +13,6 @@ public class ThreeChannelInitializer extends ChannelInitializer<SocketChannel>
     @Override
     protected void initChannel(SocketChannel ch) throws Exception
     {
-        ch.pipeline().addLast(new LastOut());
         ch.pipeline().addLast(new OneOut());
         ch.pipeline().addLast(new StringToByteEncoder());
         ch.pipeline().addLast(new ByteToStringDecoder());
