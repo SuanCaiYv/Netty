@@ -4,6 +4,9 @@ import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.epoll.EpollServerSocketChannel;
+import io.netty.channel.group.ChannelGroup;
+import io.netty.channel.group.DefaultChannelGroup;
+import io.netty.util.concurrent.GlobalEventExecutor;
 
 import java.net.InetSocketAddress;
 
@@ -18,15 +21,21 @@ public class Server
     {
         new Server().run();
     }
+
+    /**
+     * 来自网络: 客户端向服务器发送一个升级协议的HTTP请求, 这个请求头部包含Connection和Upgrade字段, 表示客户端需要使用WebSocket协议.
+     * 服务器将HTTP协议升级成WebSocket协议后返回客户端响应数据, 即完成了握手阶段, 建立了WebSocket连接, 这个连接会持续存在, 直到客户端或服务器主动关闭连接.
+     */
     public void run()
     {
         EventLoopGroup bossGroup = new EpollEventLoopGroup();
         EventLoopGroup workGroup = new EpollEventLoopGroup();
         ServerBootstrap serverBootstrap = new ServerBootstrap();
+        ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
         serverBootstrap.group(bossGroup, workGroup)
                 .localAddress(new InetSocketAddress(8189))
                 .channel(EpollServerSocketChannel.class)
-                .childHandler(new ChannelInitializerOne());
+                .childHandler(new ChannelInitializerOne(channels));
         serverBootstrap.bind();
     }
 }
